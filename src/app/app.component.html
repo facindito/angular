@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h1>Mi contador</h1>
+
+<div>
+  <counter [cont]=100 [step]=2 (plusClicked)="onFirstPlusClicked($event)"></counter>
+</div>
+<div>
+  <counter [cont]=10 [step]=3 (plusClicked)="onFirstStepClicked($event)"></counter>
+</div>
+<div>
+  <counter [cont]="conterValue" [step]="stepValue"></counter>
+</div>
+
+<div>
+  <counter></counter>
+</div>
