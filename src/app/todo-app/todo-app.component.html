@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="currentItem.description">
+<button (click)="addItem()">+</button>
+<div *ngFor="let item of items ; let i = index" [class.is-done]="item.done">
+  {{item | json}}
+<input type="checkbox" [(ngModel)]="item.done">
+<button (click)="deleteItem(i)">X</button>
+</div>

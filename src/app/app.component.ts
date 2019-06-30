@@ -11,6 +11,10 @@ export class AppComponent {
   public conterValue =0;
   public stepValue = 0;
 
+  lista(){
+    
+  }
+  
   onFirstPlusClicked(value){
     this.conterValue=value;
   }
